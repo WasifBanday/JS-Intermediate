@@ -21,3 +21,19 @@ p2.address.h = 'hacked'
 
 console.log(p1)
 console.log(p2)
+
+//       SECOND EXAMPLE  
+
+
+const origin = {
+    name: "wasif",
+    skills: ["HTML", "CSS"]
+};
+
+// Serialization and Deserialization in one step ...
+const deepCopy = JSON.parse(JSON.stringify(origin));
+deepCopy.skills.push("Java-Script")
+
+
+console.log(origin.skills)
+console.log(deepCopy.skills)
