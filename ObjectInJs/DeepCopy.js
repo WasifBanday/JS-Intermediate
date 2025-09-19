@@ -1,0 +1,23 @@
+//   Deep Copy
+
+let p1 = {
+        fname: 'wasif',
+        lname: 'hilal',
+        address: {
+            h: 1,
+            street: 2
+        }
+    }
+    // P1 object ko string mai convert karna (JSON.stringify)  method se 
+const p1Kastring = JSON.stringify(p1)
+console.log(p1Kastring)
+
+// P1 ko waps se object mai convert karna (JSON.parse) method se 
+let p2 = JSON.parse(p1Kastring)
+
+
+p2.fname = 'piyush'
+p2.address.h = 'hacked'
+
+console.log(p1)
+console.log(p2)
