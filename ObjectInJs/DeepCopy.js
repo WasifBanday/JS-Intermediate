@@ -33,7 +33,7 @@ const origin = {
 // Serialization and Deserialization in one step ...
 const deepCopy = JSON.parse(JSON.stringify(origin));
 deepCopy.skills.push("Java-Script")
-
+    // Now the two objects have different referances , so change in one won't reflect in other...
 
 console.log(origin.skills)
 console.log(deepCopy.skills)

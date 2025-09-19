@@ -8,7 +8,7 @@ let p1 = {
 }
 
 let p2 = {
-    ...p1 // Spread operator doesn't work on inner things just it works on first things :: ise ko shallow copy kehta hai
+    ...p1 // Spread operator 
 }
 
 p2.fname = 'piyush' // pass by value
