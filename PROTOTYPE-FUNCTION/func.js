@@ -7,7 +7,7 @@ const tea = {
     typeo: "cool",
 };
 
-tea.chai(); // Yeh function ko call krta hai seedey 
+tea.chai() // Yeh function ko call krta hai seedey 
 
 
 const myTeas = ["lemon", "orange"];
