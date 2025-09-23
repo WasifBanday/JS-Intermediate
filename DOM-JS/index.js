@@ -1,3 +1,3 @@
 function changeBackground(color) {
-    document.body.style.backgroundColor = 'black';
+    document.body.style.backgroundColor = color;
 }
