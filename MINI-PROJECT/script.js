@@ -22,6 +22,8 @@ addbtn.addEventListener('click', () => {
     const li = document.createElement('li');
     li.innerText = value;
 
+
+
     const delBtn = document.createElement('button');
     delBtn.innerHTML = 'X';
 
