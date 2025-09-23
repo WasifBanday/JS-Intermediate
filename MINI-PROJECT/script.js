@@ -18,11 +18,19 @@ const todoitemscontiner = document.getElementById('todo-items-container');
 
 addbtn.addEventListener('click', () => {
     const value = todoinput.value;
+
     const li = document.createElement('li');
     li.innerText = value;
+
     const delBtn = document.createElement('button');
     delBtn.innerHTML = 'X';
+
+    delBtn.addEventListener('click', function() {
+        li.remove(); // this will delete the particular task which is been added on clicking 'X'
+    })
+
     li.appendChild(delBtn)
+
     todoitemscontiner.appendChild(li);
     todoinput.value = '';
 
