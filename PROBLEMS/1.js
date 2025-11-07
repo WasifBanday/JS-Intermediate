@@ -31,7 +31,7 @@ console.log(teas)
 
 console.log("origin" in teas)
 
-// Use a for ....in loop to print all the properties of the Object ?
+// Use a for-in loop to print all the properties of the Object ?
 
 for (let key in teas) {
     console.log(key + ":" + teas[key])
